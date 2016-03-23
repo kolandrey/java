@@ -1,6 +1,6 @@
 package oop_principles;
 
-public class Programmer extends Collaborator {
+public class Programmer extends Ñollaborator {
 	
 	public Programmer(int monthSalary, int workTime) {
 		super(monthSalary, workTime);
