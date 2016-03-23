@@ -1,0 +1,12 @@
+package ua.kh.lessons.lesson4.dz1;
+
+public class VectorTest {
+	public static void main(String[] args) {
+		Vector vector1 = new Vector();
+		vector1.add(13, 0);
+		vector1.add("4", 2);
+		System.out.println(vector1);
+//		vector1.add(4, 6);
+		
+	}
+}

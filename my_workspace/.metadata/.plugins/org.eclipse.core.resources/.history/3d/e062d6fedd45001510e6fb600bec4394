@@ -1,0 +1,51 @@
+package insart;
+
+public class Tent extends Products {
+	private int places;
+	private String color;
+	static private int count = 0;
+	static private double summa = 0;
+
+	public int getPlaces() {
+		return places;
+	}
+
+	public void setPlaces(int places) {
+		this.places = places;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public Tent() {
+		super("Marmot", 500);
+		this.places = 3;
+		this.color = "red";
+		count++;
+		summa += this.getPrice();
+	}
+
+	public Tent(String name, int price, int places, String color) {
+		super(name, price);
+		this.places = places;
+		this.color = color;
+		count++;
+		summa += price;
+	}
+
+	@Override
+	public String toString() {
+		return "Tent: " + super.toString() + ", places=" + places + ", color="
+				+ color;
+	}
+
+	static public double avrPrice() {
+		return summa / count;
+	}
+
+}

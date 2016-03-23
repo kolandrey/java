@@ -1,0 +1,10 @@
+package insart;
+
+public class ProductsTest {
+
+	public static void main(String[] args) {
+		Tent t1 = new Tent();
+		
+	}
+
+}

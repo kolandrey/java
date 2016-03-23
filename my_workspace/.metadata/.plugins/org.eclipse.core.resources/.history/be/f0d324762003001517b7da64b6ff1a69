@@ -1,0 +1,44 @@
+/* В массиве хранится 7 явно заданных текстовых строк. 
+ * Создать программу, которая отсортирует и выведет на 
+ * экран строки в алфавитном порядке. Например, если 
+ * были даны такие строки: 
+ * Пушкин
+ * Лермонтов
+ * Некрасов
+ * Толстой Л. Н.
+ * Толстой А. Н.
+ * Есенин
+ * Паустовский
+ */
+
+package kostin.tema9;
+
+public class Task9_4 {
+
+	public static void main(String[] args) {
+		String[] mas = {"Пушкин",
+				"Лермонтов",
+				"Некрасов",
+				"Толстой Л. Н.",
+				"Толстой А. Н.",
+				"Есенин",
+				"Паустовский"};
+		
+		for (int i= 0;i<mas.length;i++){
+			System.out.println(mas[i]);
+		}
+		
+		for (int i = 0; i<mas.length;i++){
+			for (int j = i+1;j<mas.length-1;i++){
+				if(mas[j].compareTo(mas[i])<0){
+					String t = mas[i];
+					mas[i] = mas[j];
+					mas[j] = t;
+				}
+			}
+		}
+//		for (int i= 0;i<mas.length;i++){
+//			System.out.println(mas[i]);
+//		}
+	}
+}

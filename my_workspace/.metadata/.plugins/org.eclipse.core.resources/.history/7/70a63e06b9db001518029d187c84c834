@@ -1,0 +1,20 @@
+package temp;
+
+
+
+class Main {
+	public static String frontBack(String str) {
+		char first = str.charAt(0);
+		char last = str.charAt(str.length()-1);
+		str = str.substring(1, str.length()-2);
+		return last+ str+first;
+	}
+
+
+
+	public static void main(final String[] args) {
+		System.out.println(frontBack("code")) ;
+		System.out.println(frontBack("a")) ;
+		System.out.println(frontBack("ab") ) ;
+	}
+}

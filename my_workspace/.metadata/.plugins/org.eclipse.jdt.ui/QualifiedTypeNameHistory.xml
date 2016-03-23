@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.sql.Time"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="ua.kh.lessons.lesson4.dz2.Matrix"/>
+<fullyQualifiedTypeName name="ua.kh.lessons.lesson5.Car"/>
+<fullyQualifiedTypeName name="ua.kh.lessons.lesson5.BMW"/>
+<fullyQualifiedTypeName name="ajp.Programmer"/>
+<fullyQualifiedTypeName name="ajp.Manager"/>
+<fullyQualifiedTypeName name="ajp.Buhgalter"/>
+<fullyQualifiedTypeName name="ajp.Sotrudnic"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="ua.kh.lessons.lesson6.Person"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="ua.kh.lessons.lesson4.dz2.IncorrectMatrixSizeException"/>
+<fullyQualifiedTypeName name="java.lang.Runtime"/>
+<fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+<fullyQualifiedTypeName name="java.io.FileFilter"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="java.util.zip.ZipEntry"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="java.util.zip.ZipInputStream"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.util.zip.ZipOutputStream"/>
+<fullyQualifiedTypeName name="threads.NewThread"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="threads.ThreadTest"/>
+<fullyQualifiedTypeName name="temp.Main.Point"/>
+<fullyQualifiedTypeName name="java.awt.Point"/>
+</qualifiedTypeNameHistroy>

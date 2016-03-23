@@ -1,0 +1,19 @@
+package threads;
+
+public class ThreadTest {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		Thread t1 = new MyThread();
+		Thread t2 = new Thread(new NewThread("второй"));
+		Thread daemon = new Thread(new NewDaemon("Поток демон"));
+		daemon.setDaemon(true);
+		daemon.start();
+		t1.start();
+		t1.join();
+		t2.start();
+		// Thread.currentThread().sleep(10000);
+		// System.out.println(Thread.currentThread().getName() + " end");
+	}
+
+}

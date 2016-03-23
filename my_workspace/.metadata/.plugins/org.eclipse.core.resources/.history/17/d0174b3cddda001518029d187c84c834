@@ -1,0 +1,14 @@
+package temp;
+
+
+class Main {
+	public static String front22(String str) {
+		String s = str.substring(0, 1);
+		
+		return s;
+		  
+	}
+	public static void main(final String[] args) {
+		System.out.println(front22("kitten"));
+	}
+}

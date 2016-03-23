@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;VectorTest.java&apos; to &apos;kostin.tema1/src/ua.kh.lessons.lesson4.test&apos;&#x0D;&#x0A;- Original project: &apos;kostin.tema1&apos;&#x0D;&#x0A;- Destination element: &apos;kostin.tema1/src/ua.kh.lessons.lesson4.test&apos;&#x0D;&#x0A;- Original element: &apos;ua.kh.lessons.lesson3.dz3.VectorTest.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;ua.kh.lessons.lesson4.test" element1="/src&lt;ua.kh.lessons.lesson3.dz3{VectorTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1435693981524" units="1" version="1.0"/>
+</session>

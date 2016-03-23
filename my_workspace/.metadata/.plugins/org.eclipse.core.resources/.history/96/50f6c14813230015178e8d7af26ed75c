@@ -1,0 +1,16 @@
+package ua.kh.lessons.lesson3.dz3;
+
+
+public class VectorTest {
+	public static void main(String[] args) {
+		Vector vector1 = new Vector();
+		vector1.add(1);
+		System.out.println(vector1);
+		vector1.add(3);
+		vector1.add(14);
+		System.out.println(vector1);
+		//clear
+		System.out.println(vector1);
+
+	}
+}

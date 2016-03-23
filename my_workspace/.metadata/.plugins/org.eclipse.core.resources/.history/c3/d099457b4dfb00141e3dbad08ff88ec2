@@ -1,0 +1,13 @@
+/* —оздайте программу, вычисл€ющую факториал натурального числа n, которое пользователь введЄт с клавиатуры.
+
+
+package kostin.tema7;
+
+public class Task7_2_7 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

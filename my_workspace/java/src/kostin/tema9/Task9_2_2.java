@@ -1,0 +1,39 @@
+/* —оздайте гибридный метод, дл€ небольших n вычисл€ющий n-ое число 
+ * ‘ибоначчи с помощью рекурсии, а дл€ значений, превышающих вы€сненное 
+ * вами в предыдущей задаче пороговое n, вычисл€ющий n-ое число ‘ибоначчи 
+ * с помощью итерационного алгоритма (цикла, в рамках которого будут 
+ * сохран€тьс€ значени€ двух предыдущих элементов последовательности).
+ */
+
+package kostin.tema9;
+
+public class Task9_2_2 {
+	public static void fib(int n) {
+		for (int i = 0, fib1 = 0, fib2 = 1; i < n; i++) {
+			int fib = fib1 + fib2;
+			System.out.println(fib);
+			fib2 = fib1;
+			fib1 = fib;
+		}
+	}
+
+	static int fib2(int n) {
+		if (n == 1 || n == 2) {
+			return 1;
+		}
+		return fib2(n - 2) + fib2(n - 1);
+	}
+
+	public static void main(String[] args) {
+		int a = 45;
+		if (a>43){
+			fib(a);
+		}
+		else {
+			for (int i=1;i<a;i++){
+				System.out.println(fib2(i));
+			}
+		}
+	}
+
+}

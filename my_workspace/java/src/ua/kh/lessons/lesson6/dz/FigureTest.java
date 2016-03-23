@@ -1,0 +1,17 @@
+package ua.kh.lessons.lesson6.dz;
+
+public class FigureTest {
+
+	public static void main(String[] args) {
+		Circle c = new Circle();
+		Circle c2 = new Circle(10, 10, 5);
+		Figure r = new Rectangle();
+		Figure t = new Triangle();
+		System.out.println(c);
+		System.out.println(r);
+		System.out.println(t);
+		System.out.println(c.isInside(c2));
+		System.out.println(c.isInside(9, 8));
+	}
+
+}

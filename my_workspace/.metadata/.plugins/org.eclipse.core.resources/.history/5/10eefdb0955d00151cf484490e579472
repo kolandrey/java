@@ -1,0 +1,39 @@
+package iostream;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class FileCopy {
+	private static final String SEPARATOR = "\r\n";
+	public static void copyIO(String pathA, String pathB) throws IOException{
+		File file = new File(pathB);
+		file.getParentFile().mkdir();
+		file.createNewFile();
+		FileWriter writer = new FileWriter(file);
+		BufferedReader reader = new BufferedReader(new FileReader(pathA));
+		String str = "";
+		while (str!=null) {
+			str = reader.readLine();
+			if (str==null) break;
+			writer.write(str + SEPARATOR);
+		}
+		reader.close();
+		writer.close();
+	}
+	public static void copyNIO(String pathA, String pathB){
+		Path from = Paths.get(pathA);
+		Path to = Paths.get(pathB);
+		try {
+			Files.copy(from, to);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

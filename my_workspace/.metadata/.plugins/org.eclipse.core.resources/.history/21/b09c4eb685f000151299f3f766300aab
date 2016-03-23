@@ -1,0 +1,8 @@
+package ua.kh.lessons.lesson5;
+
+public class CarTest {
+	public static void main(String[] args) {
+		Car car = new BMW("mark", 1990, false);
+		System.out.println(car);
+	}
+}

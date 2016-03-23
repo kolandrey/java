@@ -1,0 +1,71 @@
+package insart;
+
+public class Container {
+	private static final int DEFAULT_LENGTH = 5;
+	private Products[] array;
+	private int size;
+
+	public Container() {
+		init();
+	}
+
+	private void init() {
+		size = 0;
+		array = new Products[DEFAULT_LENGTH];
+	}
+
+	public void add(Products goods) {
+		if (size == array.length) {
+			increase();
+		}
+		array[size++] = goods;
+	}
+
+	public Products get(int index) {
+		return array[index];
+	}
+
+	public void del(int index) {
+		for (int i = index; i < array.length - 1; i++) {
+			array[index] = array[index + 1];
+			index++;
+		}
+		size--;
+	}
+
+	private void increase() {
+		Products[] array2 = new Products[this.array.length + DEFAULT_LENGTH];
+		for (int i = 0; i < this.array.length; i++) {
+			array2[i] = this.array[i];
+		}
+		this.array = array2;
+	}
+
+	@Override
+	public String toString() {
+		String line = "";
+		for (int i = 0; i < size; i++) {
+			line += (array[i] + "\n");
+		}
+		return line;
+	}
+
+	public void clear() {
+		init();
+	}
+
+	public int count() {
+		return size;
+	}
+
+	public void sortContainer() {
+		Products a1;
+		for (int i = 1; i < size; i++) {
+			if (array[i-1].sort(array[i])==1){
+				a1 = array[i];
+				array[i-1] = array[i];
+				array[i] = a1;
+			}
+		}
+	}
+}

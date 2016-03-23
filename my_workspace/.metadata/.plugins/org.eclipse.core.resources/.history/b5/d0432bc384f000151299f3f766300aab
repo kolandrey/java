@@ -1,0 +1,15 @@
+package ajp;
+
+public class TestAjp {
+
+	public static void main(String[] args) {
+		Sotrudnic p1 = new Programmer(2000, 160);
+		System.out.println(p1);
+		Sotrudnic m1 = new Manager(1000, 80);
+		System.out.println(m1);
+		Sotrudnic[] o = { p1, m1 };
+		Buhgalter b = new Buhgalter();
+		double x = b.calculateSalaries(o);
+		System.out.println(x);
+	}
+}

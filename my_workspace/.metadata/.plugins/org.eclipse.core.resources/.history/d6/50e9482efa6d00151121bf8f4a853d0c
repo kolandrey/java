@@ -1,0 +1,14 @@
+package threads;
+
+public class ThreadTest {
+
+	public static void main(String[] args) {
+//		new NewThread("первый");
+//		new NewThread("второй");
+		NewThread nt1 = new NewThread("первый");
+		NewThread nt2 = new NewThread("второй")
+		nt1.t.join();
+		nt2.t.join();
+	}
+
+}

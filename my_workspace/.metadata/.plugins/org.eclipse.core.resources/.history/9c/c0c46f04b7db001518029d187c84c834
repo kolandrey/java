@@ -1,0 +1,21 @@
+package temp;
+
+import java.lang.reflect.Array;
+
+
+class Main {
+	public static String everyNth(String str, int n) {
+		  char[] c = str.toCharArray();
+		  for (int i = 0; i < str.length(); i +=n) {
+		   c[i] = '0';
+		  }
+		  return c.toString();
+		}
+
+
+	public static void main(final String[] args) {
+		System.out.println(everyNth("Miracle", 2)) ;
+		System.out.println(everyNth("abcdefg", 2)) ;
+		System.out.println(everyNth("abcdefg", 3)) ;
+	}
+}

@@ -1,0 +1,13 @@
+package ua.kh.lessons.lesson5;
+
+public class Array2Test {
+	public static void main(String[] args) {
+		int aray[] = { 1, 2, 3, 4, 5, 76, 78, 2 };
+		int sum = 0;
+		for (int a : aray) {
+			System.out.print(a + " ");
+			sum += a;
+		}
+		System.out.println("\n" + sum);
+	}
+}

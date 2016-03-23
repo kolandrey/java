@@ -1,0 +1,61 @@
+package iostream;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+import javax.imageio.stream.FileImageInputStream;
+
+public class FileCopy {
+	private static final String SEPARATOR = "\r\n";
+	public static void copyIO(String pathA, String pathB) throws IOException{
+		File file = new File(pathB);
+		file.delete();
+		file.createNewFile();
+		FileWriter writer = new FileWriter(file);
+		BufferedReader reader = new BufferedReader(new FileReader(pathA));
+		String str = "";
+		while (str!=null) {
+			str = reader.readLine();
+			if (str==null) break;
+			writer.write(str + SEPARATOR);
+		}
+		reader.close();
+		writer.close();
+	}
+	public static void copyNIO(String pathA, String pathB){
+		Path from = Paths.get(pathA);
+		Path to = Paths.get(pathB);
+		try {
+			Files.copy(from, to);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@SuppressWarnings("deprecation")
+	public static void copyStream(String pathA, String pathB) throws IOException{
+		FileInputStream fis = new FileInputStream(new File(pathA));
+		DataInputStream dis = new DataInputStream(fis);
+		FileOutputStream fos = new FileOutputStream(new File(pathB));
+		@SuppressWarnings("resource")
+		DataOutputStream dos = new DataOutputStream(fos);
+		String str = "";
+		if ((str = dis.readLine())!= null){
+			dos.writeBytes(str);
+		}
+		fis.close();
+		dis.close();
+	}
+}

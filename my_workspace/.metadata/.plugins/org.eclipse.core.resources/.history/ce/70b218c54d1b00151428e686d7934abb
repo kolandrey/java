@@ -1,0 +1,16 @@
+package ua.kh.lessons.lesson3.dz;
+
+import javax.swing.text.html.HTMLDocument.HTMLReader.IsindexAction;
+
+public class CircleTest {
+
+	public static void main(String[] args) {
+		Circle c1 = new Circle();
+		Circle c2 = new Circle(20,15,7);
+		c1.print();
+		System.out.println(c1.isInCircle(9, 9));
+		c2.setRad(9);
+		c2.print();
+	}
+
+}

@@ -1,0 +1,31 @@
+package ua.kh.lessons.lesson3.dz3;
+
+import java.util.Arrays;
+
+public class Vector {
+	private static final int DEFAULT_LENGTH = 10;
+	private int[] array;
+	private int size;
+
+	public Vector() {
+		size = 0;
+		array = new int[DEFAULT_LENGTH];
+	}
+
+	public void add(int number) {
+		array[size++] = number;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Vector [array=" + Arrays.toString(array) + "]";
+	}
+	
+	public void clear(){
+		size = 0;
+	}
+	
+}

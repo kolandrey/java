@@ -1,0 +1,8 @@
+package temp;
+
+class Main {
+		public static void main(final String[] args) {
+			double a = 14>>2;
+			System.out.println(a);
+	}
+}

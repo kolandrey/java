@@ -1,0 +1,15 @@
+package temp;
+
+public class SomeClas {
+    public static void main(String[] args) {
+        SomeClas c = new SomeClass2();
+        SomeClass2 c2 = new SomeClass2();
+        c2.print();
+        c.print();
+    }
+}
+class SomeClass2 extends SomeClas {
+    public void print() {
+        System.out.println("message");
+    }
+}

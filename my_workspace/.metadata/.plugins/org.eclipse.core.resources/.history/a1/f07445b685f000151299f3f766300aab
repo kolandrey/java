@@ -1,0 +1,13 @@
+package ua.kh.lessons.lesson8;
+
+import java.util.TreeMap;
+
+public class Map {
+	public static void main(String[] args) {
+		TreeMap<String, Integer> map = new TreeMap<String, Integer>();
+		map.put("Ivanov", 10);
+		map.put("Petrov", 80);
+		System.out.println(map.toString());
+		
+	}
+}

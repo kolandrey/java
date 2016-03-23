@@ -1,0 +1,22 @@
+/* Создать программу, выводящую на экран случайно сгенерированное трёхзначное натуральное число 
+ * и его наибольшую цифру.
+ */
+
+package kostin.tema5;
+
+public class Task5_2 {
+
+	public static void main(String[] args) {
+		int x = (int)((Math.random()*899)+100);
+		int a = x/100;
+		int b = x%100/10;
+		int c = x%100%10;
+		System.out.println(a+" "+b+" "+c+" ");
+		if (a>=b && a>=c) System.out.println("В числе "+x+" наибольшая цифра "+ a);
+		else if (b>=a && b>=c) System.out.println("В числе "+x+" наибольшая цифра "+ b);
+		else if (c>=b && c>=a) System.out.println("В числе "+x+" наибольшая цифра "+ a);
+		
+
+	}
+
+}

@@ -1,0 +1,50 @@
+package ua.kh.lessons.lesson6.dz;
+
+public abstract class Figure implements IFigure {
+
+	private int x;
+	private int y;
+
+	public int getX() {
+		return x;
+	}
+
+	public int getY() {
+		return y;
+	}
+
+	public void setX(int x) {
+		this.x = x;
+	}
+
+	public void setY(int y) {
+		this.y = y;
+	}
+
+	public Figure() {
+		this(0, 0);
+	}
+
+	public Figure(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+
+	@Override
+	public void move(int x, int y) {
+		this.x += x;
+		setY(getY() + y);
+	}
+
+	@Override
+	public void resize(int index) {
+		setX(getX() * index);
+		setY(getY() * index);
+	}
+
+	@Override
+	public String toString() {
+		return ", x=" + x + ", y=" + y;
+	}
+
+}

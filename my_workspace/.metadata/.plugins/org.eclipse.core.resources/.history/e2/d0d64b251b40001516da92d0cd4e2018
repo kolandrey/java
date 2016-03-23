@@ -1,0 +1,21 @@
+package ua.kh.lessons.lesson6.dz;
+
+public class Rectangle extends Figure {
+	private int side;
+	
+	public Rectangle() {
+	}
+
+	@Override
+	public void resize(int index) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public double area() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

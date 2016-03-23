@@ -1,0 +1,19 @@
+package temp;
+
+
+
+class Main {
+	public static String front3(String str) {
+		  if (str.length()<4) return str+str+str;
+		  return str.substring(0, 3)+str.substring(0, 3)+str.substring(0, 3);
+		}
+
+
+
+
+	public static void main(final String[] args) {
+		System.out.println(front3("Java")) ;
+		System.out.println(front3("abc")) ;
+		System.out.println(front3("ab") ) ;
+	}
+}

@@ -1,0 +1,14 @@
+package temp;
+
+public class Test {
+
+	public static void main(String[] args) {
+		long a = 111111111111L;
+        float f = a;
+        long b = 11111L;
+        float d = b;
+        System.out.println( a == (long) f);
+        System.out.println( b == (long) d);
+	}
+
+}

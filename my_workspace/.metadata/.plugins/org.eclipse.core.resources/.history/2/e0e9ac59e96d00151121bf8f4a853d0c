@@ -1,0 +1,28 @@
+package threads;
+
+public class NewThread implements Runnable {
+	Thread t;
+
+	
+	
+	public NewThread() {
+		t = new Thread();
+		t.start();
+	}
+
+	@Override
+	public void run() {
+		for (int i = 1; i<=100;i++){
+			System.out.println(i);
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				System.out.println("Поток прерван");
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	
+
+}

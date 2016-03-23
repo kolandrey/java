@@ -1,0 +1,14 @@
+package threads;
+
+public class ThreadTest {
+
+	public static void main(String[] args) throws InterruptedException {
+		// new NewThread("первый");
+		// new NewThread("второй");
+		NewThread nt1 = new NewThread("первый");
+
+		nt1.t.join();
+		new NewThread("второй");
+	}
+
+}

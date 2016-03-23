@@ -1,0 +1,230 @@
+package etlec1;
+
+public class etlec1 {
+	/**
+	 * Method return greatest common divider for 2 positive numbers (by Euclid
+	 * method)
+	 * 
+	 * @param a
+	 *            number1
+	 * @param b
+	 *            number2
+	 */
+	public static int common_div(int a, int b) {
+		// TODO: Алгоритм эвклида
+		while (a != b) {
+			if (a > b)
+				a = a - b;
+			else
+				b = b - a;
+		}
+		return a;
+	}
+
+	/**
+	 * Method return sum of digits random integer number;
+	 * 
+	 * @param a
+	 *            number
+	 * @return sum
+	 */
+	public static int summa(int a) {
+		int b = 0;
+		while (a != 0) {
+			b += a % 10;
+			a = a / 10;
+		}
+		return b;
+	}
+
+	/**
+	 * Method returns boolean value, whether a number simple or not;
+	 * 
+	 * @param a
+	 *            number
+	 * @return "true" if number is simple, "false" if it's not;
+	 */
+	public static boolean simple(int a) {
+		boolean check = true;
+		for (int i = 2; i < a; i++) {
+			if (a % i == 0) {
+				check = false;
+				break;
+			}
+		}
+		return check;
+	}
+
+	/**
+	 * Method returns a factorial of a number;
+	 * 
+	 * @param a
+	 *            number
+	 * @return factorial
+	 */
+	public static long fact(int a) {
+		int fact = 1;
+		for (int i = 1; i <= a; i++) {
+			fact = i * fact;
+		}
+		return fact;
+
+	}
+
+	/*
+	 * Сосчитать сумму ряда 1! - 2! + 3! – 4! + 5! - … + n! для заданного числа
+	 * n > 0. Чем шире диапазон возможных значений n, тем лучше. Число n
+	 * задавать в коде программы.
+	 */
+	public static long fact2(int a) {
+		int[] mas = new int[a];
+		int fact = 1;
+		for (int j = 1; j < mas.length + 1; j++) {
+			// TODO вынести факториал в отдельный метод.
+			for (int i = 1; i <= j; i++) {
+				fact = i * fact;
+			}
+			mas[j - 1] = fact;
+			fact = 1;
+		}
+		long pos = 0;
+		for (int i = 0; i < mas.length; i++) {
+			if (i == 0 || i % 2 == 0) {
+				pos = pos + mas[i];
+			} else {
+				pos = pos - mas[i];
+			}
+		}
+		return pos;
+	}
+
+	/*
+	 * Подсчитать, сколько шестизначных цифр имеют равную сумму трех первых и
+	 * трех последних цифр.
+	 */
+	public static void six() {
+		int count = 0;
+		for (int a1 = 0; a1 < 10; a1++) {
+			for (int a2 = 0; a2 < 10; a2++) {
+				for (int a3 = 0; a3 < 10; a3++) {
+					for (int a4 = 0; a4 < 10; a4++) {
+						for (int a5 = 0; a5 < 10; a5++) {
+							for (int a6 = 0; a6 < 10; a6++) {
+								if (a1 + a2 + a3 == a4 + a5 + a6) {
+									count++;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		System.out.println(count);
+	}
+
+	/*
+	 * Разместить в памяти массив из 20 элементов и заполнить его рядом
+	 * Фиббоначчи: 1, 1, 2, 3, 5, 8, 13, 21, … В этом ряду каждое следующее
+	 * число является суммой двух предыдущих.
+	 */
+	public static int[] fib() {
+		int[] mas = new int[20];
+		for (int i = 0, fib1 = 0, fib2 = 1; i < mas.length; i++) {
+			int fib = fib1 + fib2;
+			mas[i] = fib;
+			fib2 = fib1;
+			fib1 = fib;
+		}
+		return mas;
+	}
+
+	/*
+	 * Создать целый массив из 100 элементов и заполнить его простыми числами:
+	 * 2, 3, 5, 7, 11, 13, 17, …
+	 */
+	public static void simpleMas() {
+		int[] mas = new int[100];
+		int j = 2, i = 0;
+		while (mas[99] == 0) {
+			boolean check = true;
+			for (int x = 2; x < j; x++) {
+				if (j % x == 0) {
+					check = false;
+					break;
+				}
+			}
+			if (check) {
+				mas[i] = j;
+				i++;
+			}
+			j++;
+		}
+		for (int a = 0; a < mas.length; a++) {
+			System.out.print(mas[a] + " ");
+		}
+		System.out.println();
+	}
+
+	/*
+	 * Создать двумерный массив символов и заполнить его буквами 'Ч' и 'Б' в
+	 * шахматном порядке.
+	 */
+	public static void chessMas() {
+		char[][] mas = new char[2][20];
+		for (int i = 0; i < mas.length; i++) {
+			for (int j = 0; j < mas[i].length; j++) {
+				if (i == 0 && j % 2 == 0) {
+					mas[i][j] = 'Ч';
+				} else {
+					mas[i][j] = 'Б';
+				}
+				if (i == 1 && j % 2 != 0) {
+					mas[1][j] = 'Ч';
+				}
+			}
+		}
+		for (int i = 0; i < mas.length; i++) {
+			for (int j = 0; j < mas[i].length; j++) {
+				System.out.print(mas[i][j] + " ");
+			}
+			System.out.println();
+		}
+	}
+
+	/*
+	 * Создать целый шестимерный массив с двумя значениями в каждом измерении.
+	 * Заполнить массив числами из начала натурального ряда: 1, 2, 3, … Сказать,
+	 * сколько потребуется чисел ?
+	 */
+	public static void sixMas() {
+		int count = 1;
+		int[][][][][][] mas = new int[2][2][2][2][2][2];
+		for (int a = 0; a < mas.length; a++) {
+			for (int b = 0; b < mas[a].length; b++) {
+				for (int c = 0; c < mas[a][b].length; c++) {
+					for (int d = 0; d < mas[a][b][c].length; d++) {
+						for (int e = 0; e < mas[a][b][c][d].length; e++) {
+							for (int f = 0; f < mas[a][b][c][d][e].length; f++) {
+								mas[a][b][c][d][e][f] = count;
+								count++;
+							}
+						}
+					}
+				}
+			}
+		}
+		System.out.println(count);
+
+	}
+
+	public static void main(String[] args) {
+		// System.out.println(common_div(100, 10));
+		// System.out.println(summa(123));
+		//System.out.println(simple(45));
+		System.out.println(fact(5));
+		// TODO оптимизировать методы, написать комментарии к каждому методу,
+		// создать аккант на сайте bitbucket.org
+		// Schild классы, слайды etlec и agp
+	}
+
+}

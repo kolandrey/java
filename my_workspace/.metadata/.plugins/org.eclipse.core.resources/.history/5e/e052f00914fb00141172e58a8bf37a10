@@ -1,0 +1,51 @@
+package kostin.tema7;
+import java.util.*;
+public class Task7_1 {
+    public static void main(String[] args) {
+        // prog — ÷èñëî ñîçäàííîå ïğîãğàììîé
+        // user — ÷èñëî ââåä¸ííîå ïîëüçîâàòåëåì
+        int prog, user,i=0;
+        // Ãåíåğèğóåì ñëó÷àéíîå öåëîå ÷èñëî îò 1 äî 10
+        prog = (int)(Math.random() * 20) - 10;
+        if (prog==0){
+        	do {
+        		prog = (int)(Math.random() * 20) - 10;
+        	} while (prog==0);
+        }
+        System.out.println("ß çàãàäàëî ÷èñëî îò -10 äî 10, îòãàäàéòå åãî.");
+        System.out.print("Ââîäèòå âàøå ÷èñëî: ");
+        Scanner input = new Scanner(System.in);  
+        // Ïğîâåğÿåì, åñòü ëè â ïîòîêå ââîäà öåëîå ÷èñëî
+        if( input.hasNextInt() ) {
+            do {
+                // ×èòàåì ñ ïîòîêà ââîäà öåëîå ÷èñëî
+                user = input.nextInt();
+                i++;
+                if(user == prog) {
+                    System.out.println("Âû óãàäàëè! ×èñëî ïîïûòîê - "+i);
+                } 
+                else {
+                    // Ïğîâåğÿåì, âõîäèò ëè ÷èñëî â îòğåçîê [1;10]
+                    if (user > -10 && user <= 10) {
+                        System.out.print("Âû íå óãàäàëè!");
+                        // Åñëè ÷èñëî çàãàäàííîå ïğîãğàììîé ìåíüøå...
+                        if( prog < user ) {
+                            System.out.println("Ìî¸ ÷èñëî ìåíüøå.");
+                        } 
+                        else {
+                            System.out.println("Ìî¸ ÷èñëî áîëüøå.");
+                        }
+                    } 
+                    else {
+                        System.out.println("Âàøå ÷èñëî âîîáùå íå èç íóæíîãî îòğåçêà!");
+                    }
+                }
+            } 
+            while( user != prog );
+        } 
+        else {
+            System.out.println("Îøèáêà. Âû íå ââåëè öåëîå ÷èñëî!");
+        }
+        System.out.println("Äî ñâèäàíüÿ!");
+    }
+}

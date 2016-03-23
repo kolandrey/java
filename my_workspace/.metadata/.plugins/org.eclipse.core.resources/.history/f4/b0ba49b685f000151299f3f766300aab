@@ -1,0 +1,11 @@
+package ua.kh.lessons.lesson7;
+
+public class Functions {
+	public static int add(int a, int b) {
+		return a + b;
+	}
+
+	public static int mult(int a, int b) {
+		return a * b;
+	}
+}

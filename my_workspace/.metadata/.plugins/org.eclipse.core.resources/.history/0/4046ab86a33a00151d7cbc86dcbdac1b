@@ -1,0 +1,5 @@
+package ua.kh.lessons.lesson4.dz1;
+
+public class IncorrectIndexException {
+
+}

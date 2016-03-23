@@ -1,0 +1,10 @@
+package ua.kh.lessons.lesson6.dz;
+
+public class FigureTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

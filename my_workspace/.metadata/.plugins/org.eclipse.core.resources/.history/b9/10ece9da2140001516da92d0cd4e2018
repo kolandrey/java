@@ -1,0 +1,13 @@
+package ua.kh.lessons.lesson6.dz;
+
+public class FigureTest {
+
+	public static void main(String[] args) {
+		Figure c = new Circle();
+		Figure r = new Rectangle();
+		Figure t = new Triangle();
+		System.out.println(c);
+		System.out.println(r);
+	}
+
+}

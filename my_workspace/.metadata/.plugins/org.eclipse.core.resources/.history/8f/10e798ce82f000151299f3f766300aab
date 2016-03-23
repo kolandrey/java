@@ -1,0 +1,13 @@
+package ua.kh.lessons.lesson8.copy;
+
+import java.util.Vector;
+
+public class VectorTest {
+	public static void main(String[] args) {
+		Vector<String> vector = new Vector<String>();
+		vector.add("1");
+		vector.add("21");
+		vector.remove(0);
+		System.out.println(vector.toString());
+	}
+}

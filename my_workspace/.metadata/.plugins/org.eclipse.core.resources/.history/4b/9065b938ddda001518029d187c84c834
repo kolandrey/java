@@ -1,0 +1,12 @@
+package temp;
+
+
+class Main {
+	
+	public static void main(final String[] args) {
+		int a = 5;
+        int b = 6;
+        ++a = b++;
+        System.out.println(a);
+	}
+}

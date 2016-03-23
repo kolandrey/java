@@ -1,0 +1,23 @@
+/* Создать программу, которая будет сообщать, является ли целое число, 
+ * введённое пользователем, чётным или нечётным. Если пользователь введёт 
+ * не целое число, то сообщать ему об ошибке.
+ */
+
+package kostin.tema6;
+import java.util.*;
+
+
+public class Task6_1 {
+
+	public static void main(String[] args) {
+		Scanner x = new Scanner(System.in);
+		System.out.println("Введите целое число - ");
+		if(x.hasNextInt()){
+			int a = x.nextInt();
+			if(a%2==0) System.out.println("Число четное");
+			else System.out.println("Число нечетное");
+		}
+		else System.out.println("Иди кури брат...");
+	}
+
+}

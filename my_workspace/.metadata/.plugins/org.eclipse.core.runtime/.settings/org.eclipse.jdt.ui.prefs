@@ -1,0 +1,21 @@
+content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.CharSequence"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="java.lang.AbstractStringBuilder"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="java.lang.Appendable"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="ua.kh.lessons.lesson4.dz2.Matrix"><rhs name\="ua.kh.lessons.lesson4.dz2.Matrix"/></lhs><lhs name\="ua.kh.lessons.lesson5.Car"><rhs name\="ua.kh.lessons.lesson5.BMW"/></lhs><lhs name\="ajp.Sotrudnic"><rhs name\="ajp.Programmer"/><rhs name\="ajp.Manager"/></lhs><lhs name\="ajp.Programmer"><rhs name\="ajp.Programmer"/></lhs><lhs name\="ajp.Manager"><rhs name\="ajp.Manager"/></lhs><lhs name\="ajp.Buhgalter"><rhs name\="ajp.Buhgalter"/></lhs><lhs name\="java.io.InputStream"><rhs name\="java.io.FileInputStream"/><rhs name\="java.util.zip.ZipInputStream"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.io.FileInputStream"/><rhs name\="java.util.zip.ZipInputStream"/><rhs name\="java.io.FileOutputStream"/><rhs name\="java.util.zip.ZipOutputStream"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.io.FileInputStream"/><rhs name\="java.util.zip.ZipInputStream"/><rhs name\="java.io.FileOutputStream"/><rhs name\="java.util.zip.ZipOutputStream"/></lhs><lhs name\="java.io.FileInputStream"><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="java.io.OutputStream"><rhs name\="java.io.FileOutputStream"/><rhs name\="java.util.zip.ZipOutputStream"/></lhs><lhs name\="java.io.Flushable"><rhs name\="java.io.FileOutputStream"/><rhs name\="java.util.zip.ZipOutputStream"/></lhs><lhs name\="java.io.FileOutputStream"><rhs name\="java.io.FileOutputStream"/></lhs><lhs name\="java.util.zip.ZipConstants"><rhs name\="java.util.zip.ZipEntry"/><rhs name\="java.util.zip.ZipInputStream"/><rhs name\="java.util.zip.ZipOutputStream"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.util.zip.ZipEntry"/></lhs><lhs name\="java.util.zip.ZipEntry"><rhs name\="java.util.zip.ZipEntry"/></lhs><lhs name\="java.util.zip.InflaterInputStream"><rhs name\="java.util.zip.ZipInputStream"/></lhs><lhs name\="java.io.FilterInputStream"><rhs name\="java.util.zip.ZipInputStream"/></lhs><lhs name\="java.util.zip.ZipInputStream"><rhs name\="java.util.zip.ZipInputStream"/></lhs><lhs name\="java.util.zip.DeflaterOutputStream"><rhs name\="java.util.zip.ZipOutputStream"/></lhs><lhs name\="java.io.FilterOutputStream"><rhs name\="java.util.zip.ZipOutputStream"/></lhs><lhs name\="java.util.zip.ZipOutputStream"><rhs name\="java.util.zip.ZipOutputStream"/></lhs><lhs name\="java.lang.Runnable"><rhs name\="threads.NewThread"/></lhs><lhs name\="temp.Main$Point"><rhs name\="temp.Main$Point"/></lhs></history>
+content_assist_number_of_computers=24
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+fontPropagated=true
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.ui.editor.tab.width=
+org.eclipse.jdt.ui.formatterprofiles.version=12
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.templates_migrated=true
+org.eclipse.jface.textfont=1|Consolas|14.25|0|WINDOWS|1|-19|0|0|0|400|0|0|0|-52|3|2|1|49|Consolas;
+proposalOrderMigrated=true
+spelling_locale_initialized=true
+tabWidthPropagated=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

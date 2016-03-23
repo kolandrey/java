@@ -1,0 +1,9 @@
+package ua.kh.lessons.lesson6.dz;
+
+public class Rectangle {
+
+	public Rectangle() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,20 @@
+package temp;
+
+
+
+class Main {
+	public static boolean endsLy(String str) {
+		  return str.substring(str.length()-2).equals("ly");
+		}
+
+
+
+
+
+
+	public static void main(final String[] args) {
+		System.out.println(endsLy("oddly") ) ;
+		System.out.println(endsLy("y")) ;
+		//System.out.println(max1020(23, 9)) ;
+	}
+}

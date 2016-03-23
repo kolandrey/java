@@ -1,0 +1,12 @@
+package ua.kh.lessons.lesson7;
+
+public class IntegerTest {
+
+	public static void main(String[] args) {
+		String i = new String("10");
+		String i2 = i;
+		i2 = new String("12");
+		System.out.println(i);
+	}
+
+}
