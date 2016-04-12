@@ -1,8 +1,0 @@
-package temp;
-
-class Main {
-		public static void main(final String[] args) {
-			int a = 14<<1;
-			System.out.println(a);
-	}
-}

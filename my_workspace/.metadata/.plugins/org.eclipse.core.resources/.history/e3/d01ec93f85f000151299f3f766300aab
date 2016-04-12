@@ -1,7 +1,0 @@
-package ajp2;
-
-import java.util.TreeMap;
-
-public class Spreadsheet {
-	
-}
