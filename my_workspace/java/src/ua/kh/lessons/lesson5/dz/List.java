@@ -10,6 +10,10 @@ public class List {
 
 	public List() {
 	}
+	
+	public void ru(){
+		
+	}
 
 	public void add(Integer a) {
 		if (head == null) {
